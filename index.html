@@ -7,8 +7,50 @@
 
     <!-- Css External -->
     <link rel="stylesheet" href="css\style.css">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
 </head>
 <body>
+    <!-- Header Section -->
+    <header>
+        <h1 class="text-3xl font-bold">Todo List</h1>
+    </header>
+ 
+
+    <!-- Main Section-->
+    <main>
+        <form>
+            <input type="text" id="todo-input" placeholder="Add your new todo" class="border border-gray-300 rounded p-2 mb-2 w-full">
+            <input type="date" id="todo-date" class="border border-gray-300 rounded p-2 mb-2 w-full">
+            <button type="button" onclick="addTodo()" class="bg-blue-500 text-white rounded p-2 mt-2 w-full"> Add
+                Todo</button>
+        </form>
+
+
+        <!-- List of Todos-->
+         <section class="mt-5">
+            <header>
+                <h2 class="text-2xl font-bold"> Your Todos: </h2>
+            </header>
+
+            <ul class="mt-4" id="todo-list">
+                <li class="border-b border-gray-300 py-2">Sample Todo 1 <span
+                    class="text-sm text-gray-500">2025-12-31</span></li>
+                <li class="border-b border-gray-300 py-2">Sample Todo 2 <span
+                    class="text-sm text-gray-500">2025-11-30</span></li>
+            </ul>
+        </section>
+            <!-- More to-do items will be added here dynamically -->
+    </main>
+
+
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 Fsl Website </p>
+    </footer>
     <!-- JS External -->
     <script src="js\script.js"></script>
 </body>
